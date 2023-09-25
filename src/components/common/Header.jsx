@@ -15,7 +15,7 @@ export const Header = () => {
           </div>
           <div className={responsive ? "hideMenu" : "nav"}>
             {navlink.map((links, i) => (
-              <Link key={i} data-aos="zoom-in-left">
+              <Link to={links.url} key={i} data-aos="zoom-in-left">
                 {links.text}
               </Link>
             ))}
